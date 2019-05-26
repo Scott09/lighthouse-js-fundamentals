@@ -1,21 +1,19 @@
 function calculateRectangleArea(length, width){
   let area = length * width;
-  if (area >= 0){
-    return area;
-  } else if (length === -1 || width === 0){
+  if (length === 0 || width === 0){
     return undefined;
   } else {
-    return undefined;
+    return area;
   }
 }
 
 function calculateTriangleArea(base, height){
   let area = (base * height) / 2;
-  if (area >= 0){
-    return area;
-  } else if (base === -1 || height === 0){
+  if (base === -1 && height === 0){
     return undefined;
-  } else{
+  } else if (area >= 0){
+    return area;
+  } else {
     return undefined;
   }
 }
